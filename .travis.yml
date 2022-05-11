@@ -1,0 +1,9 @@
+sudo: required
+services:
+   - docker
+
+before_install:
+   - docker build -t unnadock123/docker-react .
+
+script:
+  - docker run unnadock123/docker-react
